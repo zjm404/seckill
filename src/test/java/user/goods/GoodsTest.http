@@ -1,0 +1,14 @@
+GET http://localhost:80/api/item?id=99
+Accept: application/json
+
+###
+GET http://localhost:8080/api/v1/visitor/goods/detail/1
+Accept: text/html
+
+###
+GET http://localhost:8080/api/v1/visitor/goods
+Accept: text/html
+
+
+
+###
