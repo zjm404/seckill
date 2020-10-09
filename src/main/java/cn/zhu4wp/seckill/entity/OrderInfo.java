@@ -1,4 +1,4 @@
-package cn.zhu4wp.seckill.bean;
+package cn.zhu4wp.seckill.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,4 +29,6 @@ public class OrderInfo {
     private Integer status;
     private Date createDate;
     private Date payDate;
+//    private Long createDate;
+//    private Long payDate;
 }

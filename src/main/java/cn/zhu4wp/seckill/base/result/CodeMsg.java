@@ -29,6 +29,7 @@ public enum CodeMsg {
     MOBILE_NOT_EXIST("手机号不存在",500214),
     PASSWORD_ERROR("密码错误",500215),
     PRIMARY_ERROR("主键冲突",500216),
+    USER_NOT_EXIST("用户不存在",500217),
     /**
      * 订单错误
      */
@@ -45,7 +46,7 @@ public enum CodeMsg {
     /**
      * 加密
      */
-    Encrypt_SALT_ILLEGALITY("SALT不合法",500701);
+    Encrypt_SALT_ILLEGALITY("SALT不合法",500701), ACCESS_LIMIT_REACHED("限制流量",500801 );
 
 
     private final String msg;

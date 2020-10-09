@@ -1,6 +1,6 @@
 package cn.zhu4wp.seckill.vo;
 
-import cn.zhu4wp.seckill.bean.Goods;
+import cn.zhu4wp.seckill.entity.Goods;
 import lombok.*;
 
 import java.util.Date;

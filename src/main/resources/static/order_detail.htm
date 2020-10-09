@@ -82,7 +82,7 @@
     function getOrderDetail(){
         var orderId = g_getQueryString("orderId");
         $.ajax({
-            url:"/order/detail",
+            url:"/api/v1/user/order/detail",
             type:"GET",
             data:{
                 orderId:orderId

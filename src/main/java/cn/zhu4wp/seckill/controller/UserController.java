@@ -1,7 +1,7 @@
 package cn.zhu4wp.seckill.controller;
 
 import cn.zhu4wp.seckill.base.result.Result;
-import cn.zhu4wp.seckill.bean.User;
+import cn.zhu4wp.seckill.entity.User;
 import cn.zhu4wp.seckill.redis.RedisService;
 import cn.zhu4wp.seckill.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,7 @@ import javax.annotation.Resource;
  * @Version 1.0
  */
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/api")
 public class UserController {
     @Resource
     UserService userService;

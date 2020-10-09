@@ -71,23 +71,19 @@
 //        加载中
         g_showLoading();
 
-        var inputPass = $("#password").val();
-        var salt = g_passsword_salt;
-        var str = "" + "" + salt.charAt(0)+str+salt.charAt(1)+salt.charAt(3)+salt.charAt(2);
-        var password = md5(str);
 
         $.ajax({
             url: "/api/v1/visitor/login",
             type: "POST",
             data: {
                 mobile: $("#mobile").val(),
-                password: password
+                password: $("#password").val()
             },
             success: function (data) {
                 layer.closeAll();
                 if (data.code == 0) {
                     layer.msg("成功");
-                    window.location.href = "/goods/v1/list";
+                    window.location.href = "/api/v2/visitor/goods";
                 } else {
                     layer.msg(data.msg);
                 }

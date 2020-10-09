@@ -1,6 +1,6 @@
 package cn.zhu4wp.seckill.vo;
 
-import cn.zhu4wp.seckill.bean.OrderInfo;
+import cn.zhu4wp.seckill.entity.OrderInfo;
 import lombok.Getter;
 import lombok.Setter;
 

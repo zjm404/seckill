@@ -1,4 +1,4 @@
-package cn.zhu4wp.seckill.bean;
+package cn.zhu4wp.seckill.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,13 +17,11 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class SeckillGoods {
     private Long id;
-    private String nickname;
-    private String password;
-    private String salt;
-    private String head;
-    private Date registerDate;
-    private Date lastLoginDate;
-    private Integer loginCount;
+    private Long goodsId;
+    private Integer stockCount;
+    private Date startDate;
+    private Date endDate;
+    private int version;
 }

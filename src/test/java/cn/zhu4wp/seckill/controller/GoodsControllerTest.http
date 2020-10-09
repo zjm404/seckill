@@ -1,0 +1,8 @@
+# 测试获取商品详细信息
+GET http://localhost:8080/api/v2/visitor/goods/detail/1
+
+
+# 测试获取商品列表
+GET http://localhost:8080/api/v2/visitor/goods
+
+###

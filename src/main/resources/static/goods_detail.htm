@@ -65,7 +65,7 @@
     function getSeckillResult(goodsId){
         g_showLoading();
         $.ajax({
-            url:"/seckill/result",
+            url:"/api/v1/user/seckill/result",
             type:"GET",
             data:{
                 goodsId:$("#goodsId").val(),
@@ -99,7 +99,7 @@
     }
     function doSeckill() {
         $.ajax({
-            url: "/seckill/do_seckill",
+            url: "/api/v1/visitor/seckill/",
             type: "POST",
             data: {
                 goodsId: $("#goodsId").val(),
@@ -144,7 +144,7 @@
     function getDetail() {
         var goodsId = g_getQueryString("goodsId");
         $.ajax({
-            url: "/goods/detail/" + goodsId,
+            url: "/api/v2/visitor/goods/detail/" + goodsId,
             type: "GET",
             success: function (data) {
                 if (data.code == 0) {

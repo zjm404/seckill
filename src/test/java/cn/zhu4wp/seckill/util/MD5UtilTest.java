@@ -9,18 +9,6 @@ class MD5UtilTest {
     }
 
     @Test
-    void firstEncrypt() {
-        String msg = MD5Util.firstEncrypt("hello");
-        System.out.println(msg);
-    }
-
-    @Test
-    void secondEncrypt() {
-        String msg = MD5Util.secondEncrypt("hello","demo");
-        System.out.println(msg);
-    }
-
-    @Test
     void encrypt() {
         String msg = MD5Util.encrypt("admin","demo");
         System.out.println(msg);
